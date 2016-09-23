@@ -72,7 +72,18 @@ ul.navbar li.icon{
 
   }
 }
-/* N AVIGATION BAR CSS END
+/* NAVIGATION BAR CSS END
 ---------------------------------------------------------------------- 
 */
 
+/* HOME CSS BEGINS
+---------------------------------------------------------------------- 
+*/
+
+.intro{
+  width:100%;
+  height:600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/nature_winter.jpg);
+}
