@@ -3,6 +3,10 @@ body{
   padding: 0;
 }
 
+/* NAVIGATION BAR CSS START 
+---------------------------------------------------------------------- 
+*/
+
 /* takes away margin and padding and creates background color */
 ul.navbar{
   list-style-type: none;
@@ -39,3 +43,36 @@ ul.navbar li a:hover{
 ul.navbar li.icon{
   display:none;
 }
+
+/* When the screen is less than 680px wide, hide all list items, except teh first one. SHow the list item that contains the link to open and close the navbar( li.icon) */
+
+@media screen and (max-width: 680px){
+  ul.navbar li:not(:first-child) {display: none;}/*google this to understand more*/
+  ul.navbar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 680px){
+  ul.navbar.responsive{position: relative;}
+  ul.navbar.responsive li.icon{
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  ul.navbar.responsive li{
+    float:none;
+    display: inline;
+
+  }
+  ul.navbar.responsive li a {
+    display:block;
+    text-align: left;
+
+  }
+}
+/* N AVIGATION BAR CSS END
+---------------------------------------------------------------------- 
+*/
+
